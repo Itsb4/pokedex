@@ -1,0 +1,58 @@
+h1 {
+	padding: 0.5rem;
+}
+
+.box {
+	width: 20rem;
+	max-width: 25rem;
+	margin: 0 auto;
+}
+
+.dex {
+	border: 2px solid #000;
+	width: 24rem;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: red;
+}
+
+.search-box {
+	padding: 1em;
+	display: flex;
+	max-width: 20rem;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.search-box input {
+	height: 2.8rem;
+}
+
+.btn {
+	margin-left: 1rem;
+	height: 2.8rem;
+}
+
+.card-img-top {
+	border: 2px solid #000;
+	padding: 0.4rem;
+	border-radius: 10px;
+}
+
+.card-title {
+	font-weight: 700;
+}
+
+.card {
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.danger {
+	font-weight: bold;
+	color: #fff;
+}
+
+.danger-card {
+	background-color: #f24c3d;
+}
