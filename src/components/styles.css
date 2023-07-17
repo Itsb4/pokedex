@@ -55,4 +55,5 @@ h1 {
 
 .danger-card {
 	background-color: #f24c3d;
+	border: 2px solid #fff;
 }

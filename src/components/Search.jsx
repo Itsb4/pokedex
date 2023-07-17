@@ -13,6 +13,23 @@ function Search() {
 	async function handleKeyDown(event) {
 		if (event.key === "Enter") {
 			const name = inputRef.current.value;
+			if (name !== "") {
+				try {
+					const details = await axios.get(url + name.toLowerCase());
+					setData(details.data);
+					setStatusCode(200);
+				} catch (error) {
+					setStatusCode(404);
+				}
+			}
+		} else {
+			setStatusCode(404);
+		}
+	}
+
+	async function handleClick() {
+		const name = inputRef.current.value;
+		if (name !== "") {
 			try {
 				const details = await axios.get(url + name.toLowerCase());
 				setData(details.data);
@@ -20,16 +37,7 @@ function Search() {
 			} catch (error) {
 				setStatusCode(404);
 			}
-		}
-	}
-
-	async function handleClick() {
-		const name = inputRef.current.value;
-		try {
-			const details = await axios.get(url + name.toLowerCase());
-			setData(details.data);
-			setStatusCode(200);
-		} catch (error) {
+		} else {
 			setStatusCode(404);
 		}
 	}
