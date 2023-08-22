@@ -2,8 +2,12 @@ h1 {
 	padding: 0.5rem;
 }
 
+.container {
+	max-width: 24rem;
+}
+
 .box {
-	width: 20em;
+	width: 20rem;
 	max-width: 25rem;
 	margin: 0 auto;
 }
@@ -40,13 +44,17 @@ h1 {
 }
 
 .card-title {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .card {
 	margin-bottom: 1rem;
 	text-align: left;
-	width: 90%;
+	width: 88%;
+}
+
+.card-text > span {
+	display: block;
 }
 
 .danger {
@@ -57,4 +65,10 @@ h1 {
 .danger-card {
 	background-color: #f24c3d;
 	border: 2px solid #fff;
+}
+
+@media (max-width: 374px) {
+	.dex {
+		width: 18rem;
+	}
 }

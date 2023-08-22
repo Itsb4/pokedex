@@ -11,17 +11,24 @@ function data({ data }) {
 			(type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1));
 	}
 	types = types.substring(1);
+
 	return (
 		<div className="card box">
 			<img src={image} className="card-img-top" alt={name} />
-			<div className="card-body">
-				<h4 className="card-title">{name.toUpperCase()}</h4>
+			<div className="table">
+				<h4 className="card-title m-2">{name.toUpperCase()}</h4>
 				<p className="card-text">
-					<span className="fw-bold">Weight: {data.weight}</span> |{" "}
-					<span className="fw-bold">Height: {data.height}</span>{" "}
+					<span className="fw-semibold mb-2">
+						<strong>Weight: </strong> {data.weight}
+					</span>
+					<span className="fw-semibold">
+						<strong>Height: </strong> {data.height}
+					</span>
 				</p>
 				<p className="card-text">
-					<span className="fw-bold">Type: {types}</span>
+					<span className="fw-semibold">
+						<strong>Type: </strong> {types}
+					</span>
 				</p>
 			</div>
 			<table className="table">
