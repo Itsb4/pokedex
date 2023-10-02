@@ -1,6 +1,6 @@
 # Pokemon Pokedex
 
-Use Pokedex for search your favourite pokemon and find the information about them.
+Use Pokedex to search for your favorite Pokemon and find the information about them.
 
 ## Installation
 
@@ -35,7 +35,7 @@ Pokemon [Pokedex webite](https://professor-pokedex-app.netlify.app/)
 For local usage :
 
 ```bash
-    $ git clone https://github.com/Itsb4/pokedex.git
+    $ git clone https://github.com/bhardwaj-shubham/pokedex.git
 ```
 
 ## Learn More
